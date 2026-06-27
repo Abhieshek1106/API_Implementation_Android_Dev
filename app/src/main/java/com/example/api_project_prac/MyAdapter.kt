@@ -24,6 +24,7 @@ class MyAdapter(val context: Activity, val productArraylist: List<Product>) :
     override fun onBindViewHolder(p0: MyAdapter.MyViewHolder, p1: Int) {
         val current = productArraylist[p1]
         p0.title.text = current.title
+        p0.rating.text = current.rating.toString()
         Picasso.get().load(current.thumbnail).into(p0.image)
     }
 
@@ -34,6 +35,7 @@ class MyAdapter(val context: Activity, val productArraylist: List<Product>) :
     class MyViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
 
         var title: TextView = itemView.findViewById(R.id.prod_title)
+        var rating: TextView = itemView.findViewById(R.id.ratings)
         var image: ShapeableImageView = itemView.findViewById(R.id.prod_img)
 
     }
