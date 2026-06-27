@@ -1,13 +1,13 @@
 package com.example.api_project_prac
 
 import android.app.Activity
-import android.media.Image
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import androidx.recyclerview.widget.RecyclerView.Adapter
+import com.example.api_project_prac.api_files.Product
 import com.google.android.material.imageview.ShapeableImageView
 import com.squareup.picasso.Picasso
 

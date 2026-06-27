@@ -1,4 +1,4 @@
-package com.example.api_project_prac
+package com.example.api_project_prac.api_files
 
 data class Review(
     val comment: String,
